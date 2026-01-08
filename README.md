@@ -22,25 +22,6 @@ Backend:
 - MongoDB
 - Mongoose ODM
 
-📂 Project Structure
-notes-app/
-├── app/
-│   ├── api/
-│   │   └── notes/
-│   │       ├── route.js
-│   │       └── [id]/route.js
-│   ├── page.js
-│   └── globals.css
-├── components/
-│   ├── NoteForm.js
-│   └── NoteList.js
-├── lib/
-│   └── mongodb.js
-├── models/
-│   └── Note.js
-├── .env.local
-└── package.json
-
 ⚙️ Environment Variables
 Create a .env.local file in the project root and add:
 MONGODB_URI=mongodb://127.0.0.1:27017/notesdb
@@ -72,21 +53,6 @@ DELETE /api/notes/:id → Delete a note
 POST request body example:
 { "title": "Sample Title", "content": "Sample Content" }
 
-🧠 Key Implementation Details
-- Uses Mongoose connection caching to prevent multiple database connections
-- Handles async route params as required in Next.js 16
-- Single form component reused for create and update
-- API routes always return JSON to avoid frontend parsing errors
-- Clean separation between UI, API, and database logic
-
-✅ Assignment Requirements Fulfilled
-Create Note: ✅
-View Notes: ✅
-Edit Note: ✅
-Delete Note: ✅
-MongoDB Integration: ✅
-Next.js Backend: ✅
-Tailwind CSS: ✅
 
 📌 Future Enhancements
 - Authentication
@@ -95,10 +61,4 @@ Tailwind CSS: ✅
 - Optimistic UI updates
 - Deployment using Vercel and MongoDB Atlas
 
-👤 Author
-Chandan Adhikari
-Final-year IT Student | Full-Stack Developer
-Skills: React, Next.js, Java, MongoDB
 
-📝 License
-This project is for learning and educational purposes only.
